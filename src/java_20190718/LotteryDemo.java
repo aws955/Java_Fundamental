@@ -20,8 +20,10 @@ public class LotteryDemo {
 			if (i == 0) { // 첫번째 방 lotto[0] 은 무조건 임의의 값 temp 를 저장한다.
 				lotto[i] = temp;
 			} else {
+				
 				// isExisted 는 임의의 값 temp 와 이전 배열의 값을 비교했을 때 동일한 값이 있는 경우는 true, 없으면 false
 				boolean isExisted = false;
+				
 				// i==1 일때 아래의 for loop는 1번 반복
 				// i==2 일때 아래의 for loop는 2번 반복
 				// i==3 일때 아래의 for loop는 3번 반복 ..........
