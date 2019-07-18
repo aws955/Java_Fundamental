@@ -1,4 +1,4 @@
-package java_20190716;
+package java_20190718;
 
 /*
 -달력만들기
@@ -23,10 +23,20 @@ public class CalendarDemo {
 		// 2018년도까지 총 일수 (윤년은 366일이기에 윤년의 수만큼 +1해야한다.)
 		totalCount = preYear * 365 + (preYear / 4 - preYear / 100 + preYear / 400);
 
-		// 2019년 11월까지 총 일수 (배열을 안배웠기 때문에 365-31 을 해준다.)
-		totalCount += 365-31; // 윤년이라면 366에서 빼야한다.
+		// 2019년 11월까지 총 일수
+		int[] monthArray = {31,28,31,30,31,30,31,31,30,31,30,31};
 		
-
+		boolean isLeafYear = year%4==0 && (year%400==0 || year%100!=0);
+		
+		if(isLeafYear) {
+			monthArray[1] = 29;
+		}
+		
+		for(int i=0;i<preMonth;i++) {
+			totalCount += monthArray[i];
+		}
+		
+		
 		totalCount += day;
 		
 
