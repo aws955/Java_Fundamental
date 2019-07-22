@@ -2,8 +2,14 @@ package asingle;
 
 public class Atest {
 	public static void main(String[] args) {
-		int age = 14, year=2017;
-		System.out.printf("age: %d year: %d",age,year);
+		int a = 100;
+		double b = 1000.10;
+		
+		System.out.println(a>b);
+		System.out.println(a<b);
+		System.out.println(a<=b);
+		System.out.println(a>=b);
+		System.out.println(a==b);
 	}
 
 }
