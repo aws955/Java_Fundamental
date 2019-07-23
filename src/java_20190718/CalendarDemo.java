@@ -13,8 +13,8 @@ public class CalendarDemo {
 	public static void main(String[] args) {
 
 		int year = 2019;
-		int month = 12;
-		int day = 25;
+		int month = 7;
+		int day = 23;
 
 		int preYear = year - 1; // preYear => 2018년도
 		int preMonth = month - 1; // preMonth => 2019년 11월
