@@ -16,6 +16,7 @@ public class MethodDemo {
 	public char charofString(String msg, int index) {
 		// String msg "hello";
 		// 특정문자열의 인덱스를 지정하면 문자 하나만 반환하는 메서드를 만들어 보겠다.
+		// String 문자열 관련 명령어 => charAt() 해당 인덱스의 문자를 추출
 		return msg.charAt(index);
 	}
 
