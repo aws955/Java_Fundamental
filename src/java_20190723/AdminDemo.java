@@ -8,6 +8,8 @@ public class AdminDemo {
 		// a.setPwd("1234");
 		// a.setEmail("syh@hbilab.org");
 		// a.setLevel(1);
+		
+		Admin a1 = new Admin();
 
 		System.out.printf("%s,%s,%s,%d %n", a.getId(), a.getPwd(), a.getEmail(), a.getLevel());
 	}

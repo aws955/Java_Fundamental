@@ -4,12 +4,13 @@ package asingle;
 
 public class SingleLotteryDemo {
 	public static void main(String[] args) {
-		SingleLottery t1 = new SingleLottery();
+		SingleLottery t = new SingleLottery();
 		
-		t1.printLottery(5);
+		t.printLottery(0);
 		
 		int[] a={45,34,26,1,6,8};
-		t1.printAscending(a);
+		
+		t.printAscending(a);
 	}
 
 }
