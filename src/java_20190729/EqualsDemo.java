@@ -9,8 +9,7 @@ class Car{
 		this.modelNumber = modelNumber;
 		this.color = color;
 	}
-	public Car() {
-		
+	public Car() {		
 	}
 	//단축키 : Alt + Shift + s => generate hashCode() and equals() 
 	//비교하고 싶은것만 비교도 가능
