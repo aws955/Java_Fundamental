@@ -10,11 +10,6 @@ public class Member {
 		this.name = name;
 	}
 
-	public Member(String id) {
-		super();
-		this.id = id;
-	}
-
 	public Member() {
 		super();
 	}

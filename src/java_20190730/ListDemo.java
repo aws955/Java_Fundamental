@@ -42,6 +42,13 @@ public class ListDemo {
 		list.add(p4);
 		
 		
+		for(Product product : list) {
+			if(product.number == 3) {
+				product.price = 3500;
+			}
+		}
+		
+		
 		//삭제하는방법
 		//지워지면 알아서 빈자리를 채워버린다.
 		//list.remove(1);
