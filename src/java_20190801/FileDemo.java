@@ -78,7 +78,7 @@ public class FileDemo {
 		f1.changeFile("C:\\dev\\test\\1564624516203.txt");
 		*/
 		
-		File f4 = new File("c:\\dev\\test\\VSCodeUserSetup.exe");
+		File f4 = new File("c:\\dev\\test");
 		String fileName = f4.getName();
 		String path = f4.getPath();
 		String parent = f4.getParent();
