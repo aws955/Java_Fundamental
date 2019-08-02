@@ -1,4 +1,4 @@
-package bookSingle.chapter2;
+package bookSingle.chapter2.part1;
 
 public class VarEx1 {
 	public static void main(String[] args) {
