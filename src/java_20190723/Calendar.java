@@ -111,9 +111,9 @@ public class Calendar {
 	 */
 	public void print(int year) {
 		for (int i = 0; i < 12; i++) {
-			if ((i + 1) % 2 == 1) {
+			
 				print(year, i + 1);
-			}
+			
 		}
 
 	}
