@@ -14,7 +14,7 @@ public class PrintfEx2 {
 		System.out.printf("f3= %f, %e, %g%n", f3,f3,f3);
 		
 		System.out.printf("d=%f%n", d);
-		System.out.printf("d=%15.10f%n",d);
+		System.out.printf("d=%14.10f%n",d);
 		
 		System.out.printf("[12345678901234567890]%n");
 		System.out.printf("[%s]%n", url);
