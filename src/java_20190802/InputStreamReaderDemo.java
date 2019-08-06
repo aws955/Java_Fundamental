@@ -15,7 +15,7 @@ public class InputStreamReaderDemo {
 		// System.in = > 키보드 (입력을 하면 InputStream 으로 반환해준다)
 		// System.out = > 모니터
 		// FileInputStream 에는 바이너리(1바이트) 가 와야하는데 사용자 입력을 받으면 텍스트가 오기 때문에
-		// InputSteam 으로 처리하기에는 무리가 있다.
+		// FileInputStream 으로 처리하기에는 무리가 있다.
 		// 그래서 다른 것을 이용한다.
 		InputStream in = System.in;
 

@@ -1,9 +1,12 @@
 package java_20190806;
 
+// 하나의 아이피로 여러 호스트가 나눠쓰는 방식의 DHCP 도 쓰레드와 비슷한것이다.
+
 public class ThreadDemo extends Thread {
 	public ThreadDemo(String threadName) {
 		super(threadName); // 이름을 만들어준다.
 	}
+
 
 	public void run() {
 		for (int i = 0; i < 1000; i++) {
@@ -24,5 +27,6 @@ public class ThreadDemo extends Thread {
 		ThreadDemo t2 = new ThreadDemo("두번째 스레드");
 		t2.start();
 		System.out.println("********************end********************");
+	
 	}
 }
