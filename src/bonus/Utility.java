@@ -9,9 +9,11 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 import javax.imageio.ImageIO;
 
@@ -25,6 +27,19 @@ import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.QRCodeWriter;
 
 public class Utility {
+	public static String getKoreanDate(String date) {
+		String koreanDate = null;
+		SimpleDateFormat from = new SimpleDateFormat("MMM dd, yyyy",Locale.US);
+		SimpleDateFormat to = new SimpleDateFormat("yyyy-MM-dd",Locale.KOREAN);
+		
+		try {
+			Date d = from.parse(date); 
+			koreanDate = to.format(d);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		return koreanDate;
+	}
 	public static boolean isQrcode(String content,int Width,int height) {
 		boolean isSuccess = false;
 		
