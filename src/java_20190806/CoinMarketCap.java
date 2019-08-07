@@ -27,13 +27,11 @@ public class CoinMarketCap {
 		HSSFRow row = null;
 		HSSFCell cell = null;
 		
+		
 
 		
 		try {
 			doc = Jsoup.connect(url).get();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
 
 		System.out.println("성공...");
 		
@@ -99,8 +97,6 @@ public class CoinMarketCap {
 			cell.setCellValue(marketCap);
 			
 		}
-		
-		try {
 			FileOutputStream fos = new FileOutputStream("c:\\dev\\test\\crawling.xls");
 
 			workbook.write(fos);
