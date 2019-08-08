@@ -76,7 +76,7 @@ public class MultichatGUIClient implements ActionListener {
 
 		Socket socket = null;
 		try {
-			String serverIp = "127.0.0.1";
+			String serverIp = "192.168.0.77";
 			socket = new Socket(serverIp, 7777);
 			System.out.println("서버에 연결되었습니다.");
 

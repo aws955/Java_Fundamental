@@ -10,7 +10,8 @@ import java.util.Date;
 
 public class Server {
 	static DateFormat format = new SimpleDateFormat("[hh:mm:ss]");
-
+	
+	//생성자에서 예외가 발생하여 IOException 으로 throws 해줬다.
 	public Server() throws IOException {
 		ServerSocket serverSocket = null;
 		
@@ -38,6 +39,7 @@ public class Server {
 				//클라이언트에 메세지 전송
 				dos.writeUTF("Notice : Test MSG");
 				System.out.println(getTime() + "데이터를 전송했습니다.");
+				
 			} catch(Exception ex) {
 				
 			}finally {
