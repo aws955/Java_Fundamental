@@ -15,18 +15,16 @@ public class Problem2 {
 
 	public void print(int i) {
 
-		int[] a = new int[i];
-		ArrayList<Integer> b = new ArrayList<Integer>();
+		ArrayList<Integer> arrayList = new ArrayList<Integer>();
+		
 		int initialValue = 1;
-
 		for (int j = 0; j < i; j++) {
-			a[j] = initialValue;
-			b.add(initialValue);
+			arrayList.add(initialValue);
 			initialValue++;
 		}
-		
 		// 4999 까지 배열과 리스트에 담기
 
+		
 		// selectValue 를 ++ 해주며 제너레이션 찾기 / temp 에 제너레이션 숫자 담기
 		int selectValue = 1;
 		for (int k = 1; k < i; k++) {
@@ -42,12 +40,10 @@ public class Problem2 {
 			selectValue++;
 			
 			
-			
-			
 			// 제너레이션으로 된 경우 셀프넘버가 아니기에 지워준다.
-			for (int array = 0; array < b.size(); array++) {
-				if (temp == b.get(array)) {
-					b.remove(array);
+			for (int array = 0; array < arrayList.size(); array++) {
+				if (temp == arrayList.get(array)) {
+					arrayList.remove(array);
 					break;
 				}
 			}
@@ -56,7 +52,7 @@ public class Problem2 {
 		
 		//최종 남아있는 숫자들을 더한다.
 		int total = 0;
-		for (Integer integer : b) {
+		for (Integer integer : arrayList) {
 			total += integer;
 		}
 		

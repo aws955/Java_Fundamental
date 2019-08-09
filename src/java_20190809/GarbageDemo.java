@@ -87,6 +87,7 @@ class Customer {
 }
 
 class CustomerDao{
+	
 	public Customer[] getCustomer() {
 		Customer[] cs = new Customer[10];
 		
