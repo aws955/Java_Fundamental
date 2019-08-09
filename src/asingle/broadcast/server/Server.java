@@ -23,10 +23,10 @@ public class Server {
 				System.out.println("클라이언트 접속 대기중 .....");
 				Socket socket = serverSocket.accept();
 				String ip = socket.getInetAddress().getHostAddress();
-				br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-				String id = br.readLine();
+				System.out.println(ip);
 				
-				System.out.println(id);
+				br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+				System.out.println(br.readLine());
 				
 				//st = new ServerThread(socket);
 				//Thread t = new Thread(st);

@@ -27,6 +27,7 @@ public class GUI implements ActionListener {
 	private String id;
 	BufferedWriter bw = null;
 	BufferedReader br = null;
+	
 	public GUI(String id) {
 		
 		this.id = id;
