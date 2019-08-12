@@ -25,7 +25,7 @@ public class FileClient {
 		InputStream in = null;
 		FileOutputStream fos = null;
 		try {
-			String fileName = "network\\apache-tomcat-9.0.22.zip";
+			String fileName = "scott.sql";
 			socket = new Socket(ip,port);
 			
 			out = socket.getOutputStream();
