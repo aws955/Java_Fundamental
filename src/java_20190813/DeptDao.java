@@ -16,7 +16,8 @@ public class DeptDao {
 			e.printStackTrace();
 		}
 	}
-
+	
+	
 	private static DeptDao single;
 
 	private DeptDao() {
