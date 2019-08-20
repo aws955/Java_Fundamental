@@ -25,7 +25,7 @@ public class FileClient {
 		InputStream in = null;
 		FileOutputStream fos = null;
 		try {
-			String fileName = "scott.sql";
+			String fileName = "test.mp4";
 			socket = new Socket(ip,port);
 			
 			out = socket.getOutputStream();
