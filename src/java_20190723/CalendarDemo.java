@@ -9,6 +9,7 @@ public class CalendarDemo {
 	public static String console() throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		return br.readLine();
+		
 	}
 
 	public static void main(String[] args) throws IOException {
