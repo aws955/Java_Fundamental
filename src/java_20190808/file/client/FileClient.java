@@ -25,7 +25,7 @@ public class FileClient {
 		InputStream in = null;
 		FileOutputStream fos = null;
 		try {
-			String fileName = "test2.html";
+			String fileName = "homework_20190905.docx";
 			socket = new Socket(ip,port);
 			
 			out = socket.getOutputStream();
