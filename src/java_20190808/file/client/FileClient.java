@@ -25,7 +25,7 @@ public class FileClient {
 		InputStream in = null;
 		FileOutputStream fos = null;
 		try {
-			String fileName = "homework_20190905.docx";
+			String fileName = "Amazon.pptx";
 			socket = new Socket(ip,port);
 			
 			out = socket.getOutputStream();
