@@ -20,7 +20,7 @@ public class JdbcUpdateDemo {
 		PreparedStatement pstmt = null;
 		
 		try {
-			con = DriverManager.getConnection("jdbc:mariadb://localhost:3306/kic","kic12","kic12");
+			con = DriverManager.getConnection("jdbc:mariadb://localhost:3306/test","root","kic1234");
 			
 			StringBuffer sql = new StringBuffer();
 			sql.append("Update member "); 
